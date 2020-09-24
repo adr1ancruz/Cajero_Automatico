@@ -22,8 +22,8 @@ public class Cajero_Padre {
 	
 	//metodo que realiza un deposito y se lo suma al saldo actual del cliente
 	public void setDeposito_De_Efectivo(int Deposito) {
-		//this.Deposito=Deposito;
-		//this.Saldo+=this.Deposito;
+		this.Deposito=Deposito;
+		this.Saldo+=this.Deposito;
 	}
 	
 	
