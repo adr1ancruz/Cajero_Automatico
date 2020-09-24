@@ -3,12 +3,13 @@ package system_Cajero;
 public class Cajero_Padre {
 	
 	
-	
-	protected int Saldo,Retiro,Deposito;
+	protected String Usuario;
+	protected int Saldo,Retiro,Deposito,Contraseña;
 
 
 	public Cajero_Padre(){
-		
+		this.Usuario="Adrian";
+		this.Contraseña=12345;
 		this.Saldo=1000;
 		
 	}
@@ -35,6 +36,29 @@ public class Cajero_Padre {
 	public int getRetiro_De_Efectivo() {
 		return Retiro;
 	}
+	
+
+	public boolean getEvaluar_Contraseña(String usuario,int contraseña) {
+		
+		if(usuario.equalsIgnoreCase(this.Usuario)&&contraseña==this.Contraseña) {
+			
+			return true;
+			
+		}
+		
+		return false;
+	}
+	
+	public boolean getIntentos(int intentos) {
+		if(intentos!=3) {
+			return true;
+		}else {
+			return false;
+		}
+	
+				
+	}
+	
 	
 
 }

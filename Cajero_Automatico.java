@@ -5,7 +5,6 @@ public class Cajero_Automatico {
 	public static void main(String[] args) {
 		Consulta_Saldo cliente1=new Consulta_Saldo();
 		
-		
 		Login milogin=new Login();
 		String usuario ;
 		int contraseña;
